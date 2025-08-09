@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: url(/src/images/bg-main.jpg) left/cover no-repeat;
+}
+
+.hero {
+    font-size: 3rem;
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.content .input {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: transparent;
+    backdrop-filter: blur(5px) brightness(80%);
+    padding: 1rem 1.5rem;
+    border: 1px solid #fafafa;
+    border-radius: 20px;
+}
+
+.input input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background: none;
+    border-bottom: 2px solid antiquewhite;
+    outline: none;
+    color: aliceblue;
+    font-size: 1.25rem;
+    border-radius: 10px;
+    transition: all 300ms ease;
+}
+
+.input input:active, .input input:focus, .input input:hover {
+    background: rgba(0, 0, 0, 0.3)
+}
+
+.submit {
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 300ms ease;
+}
+
+.submit:hover {
+    background: #ccc;
+    color: aliceblue;
+}
+
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    width: 400px;
+    padding: 1rem 1.5rem;
+    margin-top: 20px;
+    height: 100px;
+    border-radius: 10px;
+    font-size: 1.25rem;
+    color: aliceblue;
+    backdrop-filter: blur(5px);
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 300ms ease;
+}
